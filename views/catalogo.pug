@@ -1,0 +1,12 @@
+extends ./layouts/main.layout.pug
+include ./mixins/producto.minins.pug
+//- include mixin.pug
+
+block principal
+    .row
+        each lista in productos
+            +producto(lista)
+        hr
+    p esto es el catalogo
+    div
+        p holaaaaaaaaaaaaaaaaaaa
